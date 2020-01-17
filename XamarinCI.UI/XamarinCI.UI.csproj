@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <LangVersion>Latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>Latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Markup\Animations\**" />
+    <Compile Remove="Markup\Extensions\**" />
+    <EmbeddedResource Remove="Markup\Animations\**" />
+    <EmbeddedResource Remove="Markup\Extensions\**" />
+    <None Remove="Markup\Animations\**" />
+    <None Remove="Markup\Extensions\**" />
+    <Compile Remove="Languages\AppResource_vi.Designer.cs" />
+    <EmbeddedResource Remove="Views\Base\ViewBase.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
+    <PackageReference Include="Prism.Forms" Version="7.1.0.431" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
+    <PackageReference Include="Prism.Autofac.Forms" Version="7.1.0.431" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.4.859" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.4.859" />
+    <PackageReference Include="akavache" Version="6.2.3" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Prism.Plugin.Popups" Version="2.2.0.293" />
+    <PackageReference Include="Plugin.Multilingual" Version="1.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Markup\Behaviors\" />
+    <Folder Include="Markup\Converters\" />
+    <Folder Include="Models\" />
+    <Folder Include="Controls\GroupedElements\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Views\Samples" />
+    <Folder Include="Languages\" />
+    <Folder Include="ViewModels\Common\" />
+    <Folder Include="ViewModels\Popups\" />
+    <Folder Include="Views\Common\" />
+    <Folder Include="Views\Popups\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Languages\AppResource.Designer.cs">
+      <DependentUpon>AppResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Languages\AppResource.vi.Designer.cs">
+      <DependentUpon>AppResource.vi.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Languages\AppResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Languages\AppResource.vi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResource.vi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Languages\AppResource_vi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResource_vi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Common\HomePage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinCI.Core\XamarinCI.Core.csproj" />
+  </ItemGroup>
+</Project>

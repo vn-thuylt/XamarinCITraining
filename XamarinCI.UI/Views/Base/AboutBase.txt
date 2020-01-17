@@ -1,0 +1,4 @@
+﻿Related base types of views
+
+*** LoadingIndicatorPage
+Set property IsBusy on any ViewBase to make it use

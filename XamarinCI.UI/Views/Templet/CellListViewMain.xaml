@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<forms:ViewCell x:Name="celllist"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:forms="http://xamarin.com/schemas/2014/forms"
+    x:Class="XamarinCI.UI.Views.Templet.CellListViewMain">
+    <ViewCell.View>
+        <Grid
+            Padding="5">
+            <StackLayout
+                Orientation="Horizontal"
+                x:Name="FrameMain"
+                Padding="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView
+                        Grid.Column="0"
+                        x:Name="bvRequest"
+                        CornerRadius="10"
+                        WidthRequest="50"
+                        HeightRequest="50" />
+                    <Label
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Grid.Column="0"
+                        Text="{Binding HTTPMethods}"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        FontSize="15"
+                        x:Name="lbrequest"/>
+                </Grid>
+                <Label
+                Text="{Binding NameAPIs}"
+                TextColor="Black"
+                FontSize="12"
+                VerticalOptions="Center"
+                MaxLines="3"/>
+            </StackLayout>
+        </Grid>
+    </ViewCell.View>
+</forms:ViewCell>

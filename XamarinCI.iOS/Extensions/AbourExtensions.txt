@@ -1,0 +1,2 @@
+﻿put all your extended method here!
+base on the object type

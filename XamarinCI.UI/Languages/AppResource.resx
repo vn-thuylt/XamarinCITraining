@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader
+        name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader
+        name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader
+        name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader
+        name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data
+        name="LoginWelcome"
+        xml:space="preserve">
+        <value>Welcome to Xamarin</value>
+    </data>
+    <data
+        name="LoginMainButton"
+        xml:space="preserve">
+        <value>Login</value>
+    </data>
+    <data
+        name="LoginUser"
+        xml:space="preserve">
+        <value>Username</value>
+    </data>
+    <data
+        name="LoginPassword"
+        xml:space="preserve">
+        <value>Password</value>
+    </data>
+    <data
+        name="LoginLocalAuthButton"
+        xml:space="preserve">
+        <value>Login with TouchId/FaceId</value>
+    </data>
+    <data
+        name="HomePageTitle"
+        xml:space="preserve">
+        <value>Home</value>
+    </data>
+    <data
+        name="HomeTabTitle"
+        xml:space="preserve">
+        <value>Home</value>
+    </data>
+    <data
+        name="HomeSearchPlaceholder"
+        xml:space="preserve">
+        <value>Enter patient code or name</value>
+    </data>
+    <data
+        name="PhotosPageTitle"
+        xml:space="preserve">
+        <value>Photos</value>
+    </data>
+    <data
+        name="PhotosTabTitle"
+        xml:space="preserve">
+        <value>Photos</value>
+    </data>
+    <data
+        name="SettingPageTitle"
+        xml:space="preserve">
+        <value>Settings</value>
+    </data>
+    <data
+        name="SettingTabTitle"
+        xml:space="preserve">
+        <value>Settings</value>
+    </data>
+    <data
+        name="SettingLogoutButton"
+        xml:space="preserve">
+        <value>Logout</value>
+    </data>
+    <data
+        name="PhotoDetailPageTitle"
+        xml:space="preserve">
+        <value>Photo detail</value>
+    </data>
+    <data
+        name="ValidateUserRequired"
+        xml:space="preserve">
+        <value>User name can not be blank!</value>
+    </data>
+    <data
+        name="ValidateUserMinLength"
+        xml:space="preserve">
+        <value>User name is at least 6 characters!</value>
+    </data>
+    <data
+        name="ValidateUserMaxLength"
+        xml:space="preserve">
+        <value>User name max length is 12 characters!</value>
+    </data>
+    <data
+        name="ValidatePasswordRequired"
+        xml:space="preserve">
+        <value>Please enter your password!</value>
+    </data>
+    <data
+        name="ValidatePasswordMinLength"
+        xml:space="preserve">
+        <value>Password is at least 6 characters</value>
+    </data>
+    <data
+        name="LogoutConfirm"
+        xml:space="preserve">
+        <value>Are you sure to logout?</value>
+    </data>
+    <data
+        name="ChangeLanguageConfirm"
+        xml:space="preserve">
+        <value>Are you sure to change language?</value>
+    </data>
+    <data
+        name="MessageTitleInfo"
+        xml:space="preserve">
+        <value>Info</value>
+    </data>
+    <data
+        name="MessageTitleConfirm"
+        xml:space="preserve">
+        <value>Confirmation</value>
+    </data>
+    <data
+        name="MessageTitleWarning"
+        xml:space="preserve">
+        <value>Warning</value>
+    </data>
+    <data
+        name="MessageTitleError"
+        xml:space="preserve">
+        <value>Error</value>
+    </data>
+    <data
+        name="MessageButtonOk"
+        xml:space="preserve">
+        <value>Ok</value>
+    </data>
+    <data
+        name="MessageButtonCancel"
+        xml:space="preserve">
+        <value>Cancel</value>
+    </data>
+</root>
